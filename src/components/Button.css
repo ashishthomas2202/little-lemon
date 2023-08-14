@@ -1,0 +1,18 @@
+.default-btn {
+    background-color: var(--primary-color-2);
+    color: var(--black);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    font-size: 1.3331rem;
+    font-weight: medium;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.hero button:hover {
+    /* background-color: var(--white);
+    color: var(--primary-color-2); */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}

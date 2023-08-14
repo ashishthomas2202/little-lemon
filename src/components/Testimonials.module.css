@@ -1,0 +1,32 @@
+.testimonials {
+    background-color: var(--highlight-color-1);
+    width: 100vw;
+}
+
+.container {
+    max-width: 1500px;
+    width: 100%;
+    padding: 70px 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 70px;
+}
+
+.container>header,
+main {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    
+}
+
+.container > header {
+    justify-content: center;
+}
+
+.container >  main{
+    justify-content: space-between;
+    gap: 50px;
+}
