@@ -4,6 +4,7 @@ import image from "../images/restauranfood.jpg";
 export default function Hero() {
   return (
     <section className={styles.hero}>
+      <img className={styles.background} src={image} alt="restaurant food" />
       <div className={styles.container}>
         <article>
           <header>
@@ -20,7 +21,7 @@ export default function Hero() {
             <button>Reserve a Table</button>
           </footer>
         </article>
-        <img src={image} width={500} height={500} alt="restaurant food" />
+        <img src={image} alt="restaurant food" />
       </div>
     </section>
   );
