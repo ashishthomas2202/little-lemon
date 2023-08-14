@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Navbar.module.css";
 import logo from "../images/logo.svg";
+import hamburgerIcon from "../images/hamburger_icon.svg";
 function Navbar() {
   return (
     <header className={styles.header}>
@@ -26,6 +27,9 @@ function Navbar() {
             <a href="#">Login</a>
           </li>
         </ul>
+        <button className={styles.hamburger}>
+          <img src={hamburgerIcon} alt="hamburger icon" />
+        </button>
       </nav>
     </header>
   );

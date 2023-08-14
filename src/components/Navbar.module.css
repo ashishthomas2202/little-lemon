@@ -1,36 +1,53 @@
-.header{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
+.header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
-.navbar{
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 20px;
+.navbar {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
 }
 
-.logo{
-    min-height: 62px;
+.logo {
+  min-height: 62px;
 }
 
-.navLinks{
-    display: inline-flex;
-    align-items: center;
-    list-style: none;
-    gap: 28px;
+.navLinks {
+  display: inline-flex;
+  align-items: center;
+  list-style: none;
+  gap: 28px;
 }
 
-.navLinks a{
-    text-decoration: none;
-    font-size: 1.5rem; /* 18pt */
-    color: var(--black);
-    transition: .1s ease;
+.navLinks a {
+  text-decoration: none;
+  font-size: 1.5rem; /* 18pt */
+  color: var(--black);
+  transition: 0.1s ease;
 }
 
-.navLinks a:hover{
-    color: var(--primary-color-2);
+.navLinks a:hover {
+  color: var(--primary-color-2);
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 0 15px;
+  background-color: var(--highlight-color-1);
+  color: var(--primary-color-1);
+  border: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .navLinks {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
