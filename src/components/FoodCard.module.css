@@ -1,54 +1,62 @@
-.card{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.card > img{
-    object-fit: cover;
-    width: 100%;
-    height: 250px;
-    border-top-left-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
+.card > img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
 }
 
-.cardContent{
+.cardContent {
+  height: 60%;
+  background-color: var(--highlight-color-1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cardContent header {
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  color: var(--secondary-color-1);
+}
+
+.cardContent main p {
+  font-family: var(--secondary-font);
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.cta {
+  font-family: var(--secondary-font);
+  font-size: 1.4em;
+  border: none;
+  padding-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.cta img {
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 796px) {
+  .card > img {
     height: 350px;
-    background-color: var(--highlight-color-1);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.cardContent header{
-    font-family: var(--primary-font);
-    font-size: 1.6rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.price{
-    color:var(--secondary-color-1)
-}
-
-.cardContent main p{
-    font-family: var(--secondary-font);
-    font-size: 1.4rem;
-    font-weight: 300;
-}
-
-.cta{
-    font-family: var(--secondary-font);
-    font-size: 1.4em;
-    border:none;
-    padding-bottom: 20px;
-    display: inline-flex;
-    align-items: center;
-}
-
-.cta img{
-    width: 25px;
-    height: 25px;
-    margin-left: 15px;
+  }
+  .cardContent {
+    gap: 20px;
+  }
 }
