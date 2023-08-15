@@ -42,7 +42,7 @@ export default function Highlights() {
       <div className={styles.container}>
         <header>
           <h1 className="display-title">This weeks specials!</h1>
-          <Button>Online Menu</Button>
+          <Button className={styles.button}>Online Menu</Button>
         </header>
 
         <main>

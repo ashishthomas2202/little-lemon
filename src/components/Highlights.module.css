@@ -1,24 +1,52 @@
-.highlights{
-    width: 100vw;
-    max-width: 1200px;
-    margin: 0 auto;
+.highlights {
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.container{
-    width:100%;
-    padding: 70px 20px;
-    display: flex;
+.container {
+  width: 100%;
+  padding: 70px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 70px;
+}
+
+.container > header,
+.container > main {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    padding: 100px 20px;
+  }
+  .container > header,
+  .container > main {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 796px) {
+  .container > header,
+  .container > main {
     flex-direction: column;
-    justify-content: space-evenly;
-    gap: 70px;
-}
+    align-items: center;
+    gap: 25px;
+  }
 
-.container > header, .container>main{
+  .button {
     width: 100%;
-    height: max-content;
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
+  }
 }
 
-
+@media screen and (max-width: 496px) {
+  .container > header > h1 {
+    font-size: 2.5rem !important;
+  }
+}
