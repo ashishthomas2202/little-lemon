@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./Hero.module.css";
 import image from "../images/restauranfood.jpg";
+import { Link } from "react-router-dom";
+import Button from "./Button";
 export default function Hero() {
   return (
     <section className={styles.hero}>
@@ -18,7 +20,9 @@ export default function Hero() {
             </p>
           </main>
           <footer>
-            <button>Reserve a Table</button>
+            <Link to="/booking">
+              <Button>Reserve a Table</Button>
+            </Link>
           </footer>
         </article>
         <img src={image} alt="restaurant food" />

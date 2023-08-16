@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Navbar.module.css";
 import logo from "../images/logo.svg";
 import hamburgerIcon from "../images/hamburger_icon.svg";
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <header className={styles.header}>
@@ -9,22 +10,22 @@ function Navbar() {
         <img src={logo} className={styles.logo} alt="Little Lemon Logo" />
         <ul className={styles.navLinks}>
           <li>
-            <a href="#">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#about">About</a>
+            <Link to="/">About</Link>
           </li>
           <li>
-            <a href="#">Menu</a>
+            <Link to="/">Menu</Link>
           </li>
           <li>
-            <a href="#">Reservations</a>
+            <Link to="/">Reservations</Link>
           </li>
           <li>
-            <a href="#">Order Online</a>
+            <Link to="/">Order Online</Link>
           </li>
           <li>
-            <a href="#">Login</a>
+            <Link to="/">Login</Link>
           </li>
         </ul>
         <button className={styles.hamburger}>

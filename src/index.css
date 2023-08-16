@@ -1,50 +1,54 @@
-:root{
-
-  --primary-color-1: #495E57;
-  --primary-color-2: #F4CE14;
-  --secondary-color-1: #EE9972;
-  --secondary-color-2: #FBDABB;
-  --highlight-color-1: #EDEFEE;
+:root {
+  --primary-color-1: #495e57;
+  --primary-color-2: #f4ce14;
+  --secondary-color-1: #ee9972;
+  --secondary-color-2: #fbdabb;
+  --highlight-color-1: #edefee;
   --highlight-color-2: #333333;
-  --white: #FFFFFF;
+  --white: #ffffff;
   --black: #000000;
 
-  --primary-font: 'Markazi Text', serif;
-  --secondary-font: 'Karla', sans-serif;
+  --primary-font: "Markazi Text", serif;
+  --secondary-font: "Karla", sans-serif;
 
-  --border-radius:  16px;
+  --border-radius: 16px;
 
-  .display-title{
+  .display-title {
     font-family: var(--primary-font);
     font-size: 4rem; /* 64px */
     font-weight: medium;
   }
 
-  .sub-title{ 
+  .sub-title {
     font-family: var(--primary-font);
     font-size: 2.5rem; /* 40px */
     font-weight: medium;
   }
 
-  .lead-text{
+  .lead-text {
     font-family: var(--primary-font);
     font-size: 1.5rem; /* 18px */
     font-weight: medium;
   }
 
-  .paragraph{
+  .paragraph {
     font-family: var(--secondary-font);
     font-size: 1.3rem; /* 16px */
     font-weight: 400;
   }
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: var(--secondary-font);
+}
+
+a {
+  text-decoration: none;
+  color: unset;
 }
