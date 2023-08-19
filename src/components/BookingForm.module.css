@@ -1,0 +1,38 @@
+.bookingForm {
+  font-family: var(--secondary-font);
+  width: 100%;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bookingForm label {
+  font-family: var(--primary-font);
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+.bookingForm input,
+.bookingForm select {
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid var(--highlight-color-2);
+  border-radius: 5px;
+}
+.bookingForm input[type="submit"] {
+  background-color: var(--primary-color-2);
+  color: var(--highlight-color-2);
+  margin-top: 50px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.bookingForm input[type="submit"]:hover {
+  background-color: var(--white);
+  color: var(--primary-color-2);
+  border-color: var(--primary-color-2);
+}
+
+.bookingForm p {
+  color: red;
+  margin-top: 5px;
+}

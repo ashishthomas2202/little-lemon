@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .navbar {
@@ -44,10 +45,24 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .navbar {
+    padding: 20px 20px;
+  }
+
   .navLinks {
     display: none;
   }
   .hamburger {
     display: block;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .logo {
+    min-height: 52px;
+  }
+
+  .hamburger {
+    padding: 0 8px;
   }
 }
